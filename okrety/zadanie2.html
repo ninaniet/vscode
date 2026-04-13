@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    Okręty wojenne
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="okrety.html">Zestawienie okrętów</a>
+        <a href="zadanie1.html">Zadanie 1</a>
+        <a href="zadanie2.html">Zadanie 2</a>
+    </nav>
+
+    <main>
+
+        <h2>Zadanie 2</h2>
+        <p>SELECT klasy_okretow.typ, klasy_okretow.kraj, COUNT(okrety.id_okretu) AS liczba_okretow FROM klasy_okretow JOIN okrety ON klasy_okretow.typ = okrety.typ GROUP BY klasy_okretow.typ, klasy_okretow.kraj ORDER BY liczba_okretow DESC;</p>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>typ</th>
+      <th>kraj</th>
+      <th>liczba_okretow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Kongo</td><td>Japonia</td><td>3</td></tr>
+    <tr><td>Dido</td><td>Wielka Brytania</td><td>2</td></tr>
+    <tr><td>Mogami</td><td>Japonia</td><td>2</td></tr>
+    <tr><td>Yamato</td><td>Japonia</td><td>2</td></tr>
+    <tr><td>Clemson</td><td>USA</td><td>2</td></tr>
+    <tr><td>Fletcher</td><td>USA</td><td>2</td></tr>
+    <tr><td>Bismarck</td><td>Niemcy</td><td>2</td></tr>
+    <tr><td>Revenge</td><td>Wielka Brytania</td><td>2</td></tr>
+    <tr><td>Iowa</td><td>USA</td><td>2</td></tr>
+    <tr><td>Hipper</td><td>Niemcy</td><td>1</td></tr>
+  </tbody>
+</table>
+
+    </main>
+
+</div>
+
+<footer>
+    Autor: Gall Anonim
+</footer>
+
+</body>
+</html>

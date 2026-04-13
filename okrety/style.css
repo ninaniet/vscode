@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* MENU LEWE */
+nav {
+    width: 20%;
+    background: #222;
+    min-height: 80vh;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #333;
+}
+
+nav a:hover {
+    background: red;
+}
+
+/* TREŚĆ PRAWA */
+main {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+main img {
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: red;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

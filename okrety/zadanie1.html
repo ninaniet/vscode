@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    Okręty wojenne
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="okrety.html">Zestawienie okrętów</a>
+        <a href="zadanie1.html">Zadanie 1</a>
+        <a href="zadanie2.html">Zadanie 2</a>
+    </nav>
+
+    <main>
+
+        <h2>Zadanie 1</h2>
+        <p>SELECT okrety.typ, MIN(okrety.rok_zwodowania) AS pierwszy_rok_zwodowania FROM okrety WHERE okrety.rok_zwodowania > 1920 GROUP BY okrety.typ</p>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>typ</th>
+      <th>pierwszy_rok_zwodowania</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Bismarck</td><td>1939</td></tr>
+    <tr><td>Dido</td><td>1938</td></tr>
+    <tr><td>Fletcher</td><td>1942</td></tr>
+    <tr><td>Hipper</td><td>1938</td></tr>
+    <tr><td>Iowa</td><td>1942</td></tr>
+    <tr><td>Mogami</td><td>1934</td></tr>
+    <tr><td>Yamato</td><td>1940</td></tr>
+  </tbody>
+</table>
+
+    </main>
+
+</div>
+
+<footer>
+    Autor: Gall Anonim
+</footer>
+
+</body>
+</html>

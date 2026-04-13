@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zestawienie okrętów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    Okręty wojenne
+</header>
+
+<div class="container">
+
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="okrety.html">Zestawienie okrętów</a>
+        <a href="zadanie1.html">Zadanie 1</a>
+        <a href="zadanie2.html">Zadanie 2</a>
+    </nav>
+
+    <main>
+
+        <h2>Zestawienie okrętów wojennych</h2>
+        <p>SELECT * FROM okrety JOIN klasy_okretow ON okrety.typ = klasy_okretow.typ ORDER BY id_okretu asc;</p>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>id_okrętu</th>
+      <th>nazwa</th>
+      <th>typ</th>
+      <th>rok_zwodowania</th>
+      <th>klasa</th>
+      <th>kraj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>USS Missouri</td><td>Iowa</td><td>1944</td><td>pancernik</td><td>USA</td></tr>
+    <tr><td>2</td><td>Yamato</td><td>Yamato</td><td>1940</td><td>pancernik</td><td>Japonia</td></tr>
+    <tr><td>3</td><td>HMS Royal Oak</td><td>Revenge</td><td>1914</td><td>pancernik</td><td>Wielka Brytania</td></tr>
+    <tr><td>4</td><td>USS Fletcher</td><td>Fletcher</td><td>1942</td><td>niszczyciel</td><td>USA</td></tr>
+    <tr><td>5</td><td>IJN Kirishima</td><td>Kongo</td><td>1915</td><td>krążownik liniowy</td><td>Japonia</td></tr>
+    <tr><td>6</td><td>Bismarck</td><td>Bismarck</td><td>1939</td><td>pancernik</td><td>Niemcy</td></tr>
+    <tr><td>7</td><td>Prinz Eugen</td><td>Hipper</td><td>1938</td><td>krążownik ciężki</td><td>Niemcy</td></tr>
+    <tr><td>8</td><td>HMS Dido</td><td>Dido</td><td>1939</td><td>krążownik lekki</td><td>Wielka Brytania</td></tr>
+    <tr><td>9</td><td>IJN Mogami</td><td>Mogami</td><td>1934</td><td>krążownik ciężki</td><td>Japonia</td></tr>
+    <tr><td>10</td><td>USS Clemson</td><td>Clemson</td><td>1919</td><td>niszczyciel</td><td>USA</td></tr>
+    <tr><td>11</td><td>USS Iowa</td><td>Iowa</td><td>1942</td><td>pancernik</td><td>USA</td></tr>
+    <tr><td>12</td><td>Musashi</td><td>Yamato</td><td>1941</td><td>pancernik</td><td>Japonia</td></tr>
+    <tr><td>13</td><td>HMS Revenge</td><td>Revenge</td><td>1915</td><td>pancernik</td><td>Wielka Brytania</td></tr>
+    <tr><td>14</td><td>USS Nicholas</td><td>Fletcher</td><td>1942</td><td>niszczyciel</td><td>USA</td></tr>
+    <tr><td>15</td><td>IJN Kongo</td><td>Kongo</td><td>1913</td><td>krążownik liniowy</td><td>Japonia</td></tr>
+    <tr><td>16</td><td>Tirpitz</td><td>Bismarck</td><td>1941</td><td>pancernik</td><td>Niemcy</td></tr>
+    <tr><td>17</td><td>HMS Belfast</td><td>Dido</td><td>1938</td><td>krążownik lekki</td><td>Wielka Brytania</td></tr>
+    <tr><td>18</td><td>IJN Suzuya</td><td>Mogami</td><td>1935</td><td>krążownik ciężki</td><td>Japonia</td></tr>
+    <tr><td>19</td><td>USS Russell</td><td>Clemson</td><td>1918</td><td>niszczyciel</td><td>USA</td></tr>
+    <tr><td>20</td><td>IJN Haruna</td><td>Kongo</td><td>1915</td><td>krążownik liniowy</td><td>Japonia</td></tr>
+  </tbody>
+</table>
+
+    </main>
+
+</div>
+
+<footer>
+    Autor: Gall Anonim
+</footer>
+
+</body>
+</html>
